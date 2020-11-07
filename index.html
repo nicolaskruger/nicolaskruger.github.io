@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h1>Afinador de Violão</h1>
+        <a href="http://www.unisinos.br/">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/9/91/Lp_logo_unisinos.png" alt="">
+        </a>
+    </header>
+    <main>
+
+       
+    </main>
+    <footer class="pe">
+        <h2>Lucas Faverzani</h2>
+        <h2>
+            <a href="https://github.com/nicolaskruger">Nicolas Krüger</a>
+            
+
+        </h2>
+        <a href="https://github.com/nicolaskruger/guiteTunerTS">
+            <img src="./img/GitHub-Mark-Light-120px-plus.png" alt="">
+        </a>
+    </footer>
+    <script>
+        System.defaultJSExtensions = true;
+        System.import('./dist/boot').catch(function(err){
+            console.error(err);
+        });
+    </script>
 </body>
 </html>
