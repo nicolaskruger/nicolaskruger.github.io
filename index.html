@@ -33,7 +33,58 @@
         </a>
     </footer>
     <script>
-        console.log("teste");
+        var estado={
+            undef:"undef",
+            ok:"ok",
+            noOk:"noOk"
+        }
+        class Nota{
+            constructor(nome,fr){
+                this.nome = nome;
+                this.fr = fr;
+                this.offset = 10;
+                this.valid = 1.5;
+                this.estado = estado.undef; 
+            }
+            inRange(fr,offset){
+                return fr>=(this.fr-offset/2)&&fr<=(this.fr+offset/2);
+            }
+            change(fr){
+                this.state = estado.undef;
+                if(this.inRange(fr,this.offser)){
+                    this.state = estado.notOk;
+                    if(this.inRange(fr,this.valid)){
+                        this.state = estado.ok;
+                    }
+                }
+            }
+        }
+        class Afinador{
+            
+            get Fr(){
+                return this.fr;
+            }
+            get Notas(){
+                return [...this.notas];
+            }
+            constructor(){
+                this.notas=[
+                    new Nota("Mi",82),
+                    new Nota("Lá",110),
+                    new Nota("Ré",146),
+                    new Nota("Sol",196),
+                    new Nota("Si",247),
+                    new Nota("Mi",330)
+                ]
+                this.fr = 0;
+            }
+            play(fr){
+                this.fr=fr;
+                this.notas.forEach(n=>n.change(this.fr));
+            }
+
+        }
+        console.log(new Afinador());
     </script>
 </body>
 </html>
