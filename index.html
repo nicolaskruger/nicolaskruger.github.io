@@ -2,177 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/root.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <title>GuitarTunner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <h1>Afinador de Violão</h1>
-        <a href="http://www.unisinos.br/">
-            <img src="https://upload.wikimedia.org/wikipedia/pt/9/91/Lp_logo_unisinos.png" alt="">
-        </a>
+    <header class="header">
+        <nav id="navbar" class="navbar">
+            <input class="inv" type="checkbox" name="menu-control" id="menu-control">
+            <div class="container nav-container">    
+                <a class="nav-lik" href="#welcome-section">WELCOME</a>
+                <a class="nav-lik" href="#projects">PROJECTS</a>
+                <a class="nav-lik" href="#contact">CONTACT</a>
+            </div>
+            <label class="hamburger" for="menu-control">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </nav>
     </header>
-    <main>
+    <main class="main">
+        <section id="welcome-section" class="welcome-section">
+            <div class="container welcome-container">
+                <h1 class="w-s-title">
+                    Hey, I am Nícolas Krüger
+                </h1>
+                <h2 class="w-s-sub-title">
+                    a web developer
+                </h2>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="container project-container">
+                <h1 class="project-introduction">Some of my free code camp projects...</h1>
+                <ul class="projects-display">
+                    <li class="project-tile">
+                        <a target="_blank" class="project-link" href="https://codepen.io/nicolas-nkruger/pen/KKNpdOr">
+                            <img class="project-img" src="https://assets.codepen.io/5675072/internal/screenshots/pens/KKNpdOr.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1612214810&width=960" alt="Techinical Documentation">
+                            <p class="project-description"> Techinical Documentation </p>
+                        </a>
+                    </li>
+                    <li class="project-tile">
+                        <a target="_blank" class="project-link" href="https://codepen.io/nicolas-nkruger/pen/KKNpdOr">
+                            <img class="project-img" src="https://assets.codepen.io/5675072/internal/screenshots/pens/xxRbrYx.default.png?fit=cover&format=auto&ha=true&height=540&quality=75&v=2&version=1612124861&width=960" alt="Landing Page">
+                            <p class="project-description"> Landing Page </p>
+                        </a>
+                    </li>
+                    <li class="project-tile">
+                        <a target="_blank" class="project-link" href="https://codepen.io/nicolas-nkruger/pen/KKNpdOr">
+                            <img class="project-img" src="https://assets.codepen.io/5675072/internal/screenshots/pens/abBzzYW.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1612036690&width=960" alt="Survey Form">
+                            <p class="project-description"> Survey Form </p>
+                        </a>
+                    </li>
+                    <li class="project-tile">
+                        <a target="_blank" class="project-link" href="https://codepen.io/nicolas-nkruger/pen/KKNpdOr">
+                            <img class="project-img" src="https://assets.codepen.io/5675072/internal/screenshots/pens/rNWaBrK.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1612026996&width=960" alt="Tribute Page">
+                            <p class="project-description"> Tribute Page </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container contact-container">
 
-       
+                <h1 class="contact-title">If you want to talk...</h1>
+                <ul class="contact-ul">
+                    <li class="contact-tile">
+                        <a id="profile-link" target="_blank" class="contact-link" href="https://github.com/nicolaskruger">
+                            <img id="img-git" class="contact-img" src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="GitHub">
+                            <p class="contact-name">GitHub</p>
+                        </a>
+                    </li>
+                    <li class="contact-tile">
+                        <a target="_blank" class="contact-link" href="https://www.linkedin.com/in/n%C3%ADcolas-kr%C3%BCger-procuro-estagio/">
+                            <img id="img-linkedin" class="contact-img" src="https://www.redemagic.com/blog/wp-content/themes/theme-magic/icons/linkedin.svg" alt="Linkedin">
+                            <p class="contact-name">Linkedin</p>
+                        </a>
+                    </li>
+                    <li class="contact-tile">
+                        <a target="_blank" class="contact-link" href="tel:51-98138-5569">
+                            <img id="img-zap" class="contact-img" src="https://lh3.googleusercontent.com/proxy/0LIODStnlBYQFNRMopCCf1R7J2y_r2tLZiX0XZjyKyuesUOyhgYgeaiQXw2O0kRAEW7XKZFCQLk4NOakPSqcgB18vke03yYElJ5ICbNtAglYXhBakR9unyCvY7SgAl0" alt="Cell">
+                            <p class="contact-name">(51) 98138-5569</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
     </main>
-    <footer class="pe">
-        <h2>Lucas Faverzani</h2>
-        <h2>
-            <a href="https://github.com/nicolaskruger">Nicolas Krüger</a>
-            
-
-        </h2>
-        <a href="https://github.com/nicolaskruger/guiteTunerTS">
-            <img src="./img/GitHub-Mark-Light-120px-plus.png" alt="">
-        </a>
-    </footer>
-    <script>
-        var estado={
-            undef:"undef",
-            ok:"ok",
-            notOk:"notOk"
-        }
-        class Nota{
-            constructor(nome,fr){
-                this.nome = nome;
-                this.fr = fr;
-                this.offset = 10;
-                this.valid = 1.5;
-                this.state = estado.ok; 
-            }
-            inRange(fr,offset){
-                return fr>=(this.fr-offset/2)&&fr<=(this.fr+offset/2);
-            }
-            change(fr){
-                this.state = estado.undef;
-                if(this.inRange(fr,this.offset)){
-                    this.state = estado.notOk;
-                    if(this.inRange(fr,this.valid)){
-                        this.state = estado.ok;
-                    }
-                }
-            }
-        }
-        class Afinador{
-            
-            get Fr(){
-                return this.fr;
-            }
-            get Notas(){
-                return [...this.notas];
-            }
-            constructor(){
-                this.notas=[
-                    new Nota("Mi",82),
-                    new Nota("Lá",110),
-                    new Nota("Ré",146),
-                    new Nota("Sol",196),
-                    new Nota("Si",247),
-                    new Nota("Mi",330)
-                ]
-                this.fr = 0;
-            }
-            play(fr){
-                this.fr=fr;
-                this.notas.forEach(n=>n.change(this.fr));
-            }
-
-        }
-        function getFr(dataArray,sampleRate){
-            let data = [...dataArray].sort((a,b)=>a-b);
-            let max = data[data.length-1];
-            let pos = dataArray.indexOf(max);
-            return pos*sampleRate/(data.length*2);
-        }
-        class View {
-            constructor(element) {
-                this.element = element;
-            }
-            template(model){}
-            set(models){
-                this.element.innerHTML = this.template(models);
-            }
-        }
-        class ViewAfinador extends View{
-            template(model){
-                return `<div class="frequencia">
-                            <h2> ${model.Fr.toFixed(2)} Hz</h2>
-                        </div>
-                        <div class="cordas">
-                        ${model.Notas.map(n=>`
-                        <div class=" nota">
-                            <div class="${n.state}">
-
-                            </div>
-                            <h2>
-                                ${n.nome}
-                            </h2>
-                            <h2>
-                                ${n.fr} Hz
-                            </h2>
-                        </div>
-                        `).join('')}
-                    
-                    
-                    </div>
-                </div>
-                        `
-            }
-        }
-        class ControllerAfinador{
-
-            constructor(){
-                this.audioCtx;
-                this.analyser;
-                this.dataArray;
-                this.fre = Math.pow(2,15);
-                this.Constrant = {audio:true};
-                this.$ = document.querySelector.bind(document);
-                this.main = this.$('main');
-                this.afinador = new Afinador();
-                this.viewAfinado = new ViewAfinador(this.main);
-                if (navigator.mediaDevices.getUserMedia){
-                    console.log('getUserMedia supported')
-                    navigator.mediaDevices.getUserMedia(this.Constrant).then(this.onSuccess.bind(this),this.onError.bind(this));
-                }
-            }
-            visualize(stream){
-                
-
-                if(!this.audioCtx){
-                    this.audioCtx = new AudioContext();
-                }
-                const source = this.audioCtx.createMediaStreamSource(stream);
-                this.analyser = this.audioCtx.createAnalyser();
-                this.analyser.fftSize = this.fre;
-                const bufferLength = this.analyser.frequencyBinCount;
-                this.dataArray = new Uint8Array(bufferLength);
-                source.connect(this.analyser);
-                this.draw();
-            }
-            onSuccess(stream){
-                this.visualize(stream);
-            }
-            onError(err){
-                console.log('occoreu um erro: ' + err);
-            }
-
-            draw(){
-                this.analyser.getByteFrequencyData(this.dataArray);
-                requestAnimationFrame(this.draw.bind(this));
-            
-                const fr = getFr(this.dataArray,this.audioCtx.sampleRate);
-                this.afinador.play(fr);
-                this.viewAfinado.set(this.afinador)
-            }
-        }
-        let controller = new ControllerAfinador();
-    </script>
 </body>
 </html>
